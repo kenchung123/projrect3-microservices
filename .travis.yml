@@ -2,7 +2,7 @@ languages: node_js
 node_js:
   - 12
 services: 
-  -docker
+  - docker
 script:
   # build
   - docker build -t udagram-api-feed ./udagram-api-feed
