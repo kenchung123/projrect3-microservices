@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-deployment
+  labels:
+    app: frontend-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: frontend
+  template:
+    metadata:
+      labels:
+        app: frontend
+    spec:
+      containers:
+      - name: frontend-node
+        image: "chungvt/udagram-frontend:v1"
+        imagePullPolicy: Always
+        ports:
+          - containerPort: 80
+        resources:
+          requests:
+              memory: "700Mi"
+              cpu: "1000m"
+          limits:
+            memory: "1Gi"
+            cpu: "1200m"
+        envFrom:
+          - configMapRef:
+              name: env-configmap
+      restartPolicy: Always
