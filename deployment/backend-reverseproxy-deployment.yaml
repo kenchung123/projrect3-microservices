@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: backend-reverseproxy-deployment
+  name: backend-reverseproxy
   labels:
-    app: backend-reverseproxy-deployment
+    app: backend-reverseproxy
 spec:
   replicas: 1
   selector:
