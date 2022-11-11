@@ -9,4 +9,4 @@ data:
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: chungvt
-  URL: http://a23bf701153d94895a5b57cc6213e2bb-1104542883.us-west-1.elb.amazonaws.com:8100
+  URL: http://aa1d3fb19c2dd49b18944c1fa5624980-2103139143.us-west-1.elb.amazonaws.com:8100
