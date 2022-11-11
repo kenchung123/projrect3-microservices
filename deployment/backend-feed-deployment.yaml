@@ -16,15 +16,15 @@ spec:
     spec:
       containers:
       - name: backend-feed-node
-        image: "chungvt/udagram-api-feed:v1"
+        image: "chungvt/udagram-api-feed:v2"
         imagePullPolicy: Always
         resources:
               requests:
                 cpu: "500m"
-                memory: "800Mi"
+                memory: "2048Mi"
               limits:
-                cpu: "1000m"
-                memory: "1Gi"
+                cpu: "500m"
+                memory: "2048Mi"
         env:
           - name: POSTGRES_USERNAME
             valueFrom:

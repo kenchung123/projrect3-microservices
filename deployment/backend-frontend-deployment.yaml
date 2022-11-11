@@ -16,17 +16,17 @@ spec:
     spec:
       containers:
       - name: frontend-node
-        image: "chungvt/udagram-frontend:v1"
+        image: "chungvt/udagram-frontend:v7"
         imagePullPolicy: Always
         ports:
           - containerPort: 80
         resources:
           requests:
-              memory: "700Mi"
-              cpu: "1000m"
+              memory: "64Mi"
+              cpu: "250m"
           limits:
-            memory: "1Gi"
-            cpu: "1200m"
+            memory: "1024Mi"
+            cpu: "500m"
         envFrom:
           - configMapRef:
               name: env-configmap

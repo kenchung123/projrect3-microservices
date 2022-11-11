@@ -16,15 +16,15 @@ spec:
     spec:
       containers:
       - name: backend-reverseproxy-node
-        image: "chungvt/reverseproxy:v1"
+        image: "chungvt/reverseproxy:v2"
         imagePullPolicy: Always
         resources:
               requests:
-                memory: "128Mi"
-                cpu: "500m"
+                memory: "64Mi"
+                cpu: "250m"
               limits:
-                memory: "512Mi"
-                cpu: "1000m"
+                memory: "1024Mi"
+                cpu: "500m"
         ports:
           - containerPort: 8080
           
