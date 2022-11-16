@@ -6,7 +6,7 @@ data:
   POSTGRES_HOST: database-test.c5jhiuh4synl.us-west-1.rds.amazonaws.com
   POSTGRES_DB: postgres
   AWS_BUCKET: microservice-bucket
-  AWS_REGION: us-east-1
+  AWS_REGION: us-west-1
   AWS_PROFILE: default
   JWT_SECRET: chungvt
-  URL: http://af8d483b4c09d417993106747b61fd33-1961011686.us-west-1.elb.amazonaws.com:8100
+  URL: http://localhost:8100

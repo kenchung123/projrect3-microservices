@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-node
-        image: "chungvt/udagram-frontend:v7"
+        image: "chungvt/udagram-frontend:v2"
         imagePullPolicy: Always
         ports:
           - containerPort: 80
