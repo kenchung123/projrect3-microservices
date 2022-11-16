@@ -9,4 +9,4 @@ data:
   AWS_REGION: us-west-1
   AWS_PROFILE: default
   JWT_SECRET: chungvt
-  URL: http://localhost:8100
+  URL: http://acc1d160083db4bf2bdc7df3224717e4-21675996.us-west-1.elb.amazonaws.com:8100
