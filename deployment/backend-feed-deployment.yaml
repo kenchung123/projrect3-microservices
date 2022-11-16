@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-feed-node
-        image: "chungvt/udagram-api-feed:v2"
+        image: "chungvt/udagram-api-feed:v4"
         imagePullPolicy: Always
         resources:
               requests:
@@ -39,37 +39,37 @@ spec:
           - name: POSTGRES_HOST
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: POSTGRES_HOST
           - name: POSTGRES_DB
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: POSTGRES_DB
           - name: AWS_BUCKET
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: AWS_BUCKET
           - name: AWS_REGION
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: AWS_REGION
           - name: AWS_PROFILE
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: AWS_PROFILE
           - name: JWT_SECRET
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: JWT_SECRET
           - name: URL
             valueFrom:
               configMapKeyRef:
-                name: env-configmap
+                name: env-config
                 key: URL
         volumeMounts:
           - mountPath: "/root/.aws"

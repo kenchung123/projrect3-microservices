@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend-node
-        image: "chungvt/udagram-frontend:v2"
+        image: "chungvt/udagram-frontend:v4"
         imagePullPolicy: Always
         ports:
           - containerPort: 80
@@ -29,5 +29,5 @@ spec:
             cpu: "500m"
         envFrom:
           - configMapRef:
-              name: env-configmap
+              name: env-config
       restartPolicy: Always

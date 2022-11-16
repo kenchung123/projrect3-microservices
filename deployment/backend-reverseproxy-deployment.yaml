@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-reverseproxy-node
-        image: "chungvt/reverseproxy:v2"
+        image: "chungvt/reverseproxy:v4"
         imagePullPolicy: Always
         resources:
               requests:
