@@ -1,3 +1,0 @@
-- There is a Dockerfile in repo and the docker image can be build
-- On DockerHub images for the application are available
-- Starting the app as a container on a local system
